@@ -1,0 +1,98 @@
+When was the Bane of Mohacs?
+1526 1 history
+In which year did the Western Roman Empire break up?
+476 1 history
+In which year did the Conquest start?
+895 1 history
+When was the Golden Bull issued?
+1222 1 history
+In which year was the Magna Charta issued in England?
+1215 3 history
+When did Charles Robert introduce the gate tax?
+1336 3 history
+In which year was Budai Nagy Antal's peasant rebellion?
+1437 2 history
+In which year was John Hus burnt at the stake?
+1415 3 history
+In which year was the Triumph at Nandorfehervar?
+1456 2 history
+In which year was Dozsa's peasant rebellion?
+1514 1 history
+When was the Peace Treaty of Zsitvatorok concluded?
+1606 2 history
+When was the Compromise?
+1867 1 history
+In which year was the 8-hour working day introduced in Hungary?
+1937 3 history
+When did the Anschluss happen?
+1938 2 history
+In which year was NATO established?
+1949 2 history
+What is the height of Kekesteto?
+1014 1 geography
+What is the area of Hungary in square kilometres?
+93030 2 geography
+What is the average radius of the Earth (rounded to 10 kms)?
+6370 3 geography
+How many countries does River Danube flow through?
+10 3 geography
+When did Hungary become a member of the European Union?
+2004 1 geography
+What is the length of River Amazon in km?
+6437 3 geography
+What is the rank of Canada in the list of countries according to area?
+2 2 geography
+What is the rank of India in the list of countries according to population?
+2 2 geography
+How many neighbours does Hungary have?
+7 1 geography
+What is the length of Lake Balaton in km?
+77 3 geography
+How many countries does the Euro zone consist of (in 2012)?
+17 2 geography
+How many counties are there in Hungary?
+19 1 geography
+What is the approximate size of the catchment area of river Tisza in thousand square kilometres?
+157 3 geography
+How many districts of Budapest are on the Buda side?
+6 2 geography
+What was the population of Iborfia, the smallest settlement of Hungary on 1 January 2012?
+9 3 geography
+How many preachers are there in the title of Gyorgy Moldova's book?
+40 3 literature
+What is the atomic number of oxygen?
+8 2 chemistry
+What is the pH of a neutral solution?
+7 1 chemistry
+Which is the smallest prime number?
+2 1 mathematics
+What is the cube root of 64?
+4 2 mathematics
+How many diagonals does a regular octagon have?
+20 2 mathematics
+How many faces does an octahedron have?
+8 2 mathematics
+What is the sum of the angles of a regular pentagon in degrees?
+540 1 mathematics
+What number is obtained if 120 is increased by 25%?
+150 2 mathematics
+What is the difference of the sine of 90 degrees and the sine of -90 degrees?
+2 3 mathematics
+What is the surface area of a cube whose edges are 3 units long?
+54 2 mathematics
+What is the value of the base-10 logarithm of 1000?
+3 3 mathematics
+What is the 6th element of Fibonacci's sequence?
+8 3 mathematics
+What is the sum of the first 100 positive integers?
+5050 2 mathematics
+What is the value of 5 factorial?
+120 2 mathematics
+Which is the smallest perfect number?
+6 3 mathematics
+Which is the next term of sequence 0, 2, 4, 6, …?
+8 1 mathematics
+What is the absolute value of -55?
+55 1 mathematics
+What is the least common multiple of 4 and 6?
+12 1 mathematics

@@ -90,7 +90,7 @@ What is the value of 5 factorial?
 120 2 mathematics
 Which is the smallest perfect number?
 6 3 mathematics
-Which is the next term of sequence 0, 2, 4, 6, …?
+Which is the next term of sequence 0, 2, 4, 6, ...?
 8 1 mathematics
 What is the absolute value of -55?
 55 1 mathematics

@@ -27,8 +27,11 @@ export default class Content {
         // Kezd a kódolást innen -->
 
         res.write("Informatika angol nyelven — emelt szint");
-        const feladat: Megoldás = new Megoldás("src\\numberquest.txt");
+
+        const feladat: Megoldás = new Megoldás("numberquest.txt");
+
         res.write("Első feladat: A fájlban " + feladat.ElsőFeladat().toString() + " kérdés van");
+
         // <---- Fejezd be a kódolást
         res.write("</pre></form>");
         res.write("</body></html>");

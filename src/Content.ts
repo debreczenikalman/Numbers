@@ -26,12 +26,19 @@ export default class Content {
 
         // Kezd a kódolást innen -->
 
-        res.write("Informatika angol nyelven — emelt szint");
+        res.write("Informatika angol nyelven — emelt szint<br>");
 
         const feladat: Megoldás = new Megoldás("numberquest.txt");
 
-        res.write("Első feladat: A fájlban " + feladat.ElsőFeladat().toString() + " kérdés van");
-
+        res.write("Második feladat: A fájlban " + feladat.ElsőFeladat().toString() + " kérdés van<br>");
+        // for (let i = 0; i < feladat.kérdések.length; i++) {
+        //     const e = feladat.kérdések[i];
+        //     res.write(e.kérdés + "<br>");
+        //     res.write(e.téma + " ");
+        //     res.write(e.pontszám.toString() + " ");
+        //     res.write(e.megoldSzám.toString() + "<br>");
+        // }
+        res.write("Harmadik feladat: " + feladat.MásodikFeladat());
         // <---- Fejezd be a kódolást
         res.write("</pre></form>");
         res.write("</body></html>");

@@ -1,10 +1,10 @@
 export default class Esemény {
-    private _esemény: string;
-    public get esemény(): string {
-        return this._esemény;
+    private _téma: string;
+    public get téma(): string {
+        return this._téma;
     }
-    public set esemény(v: string) {
-        this._esemény = v;
+    public set téma(v: string) {
+        this._téma = v;
     }
 
     private _pontszám: number;
@@ -15,12 +15,12 @@ export default class Esemény {
         this._pontszám = v;
     }
 
-    private _évszám: number;
-    public get évszám(): number {
-        return this._évszám;
+    private _megoldSzám: number;
+    public get megoldSzám(): number {
+        return this._megoldSzám;
     }
-    public set évszám(v: number) {
-        this._évszám = v;
+    public set megoldSzám(v: number) {
+        this._megoldSzám = v;
     }
 
     private _kérdés: string;
@@ -31,10 +31,10 @@ export default class Esemény {
         this._kérdés = v;
     }
 
-    constructor(sor: string[]) {
-        this._kérdés = sor[0];
-        this._esemény = sor[1];
-        this._pontszám = parseInt(sor[2]);
-        this._évszám = parseInt(sor[3]);
+    constructor(kérdés: string, részletek: string[]) {
+        this._kérdés = kérdés;
+        this._téma = részletek[2];
+        this._pontszám = parseInt(részletek[1]);
+        this._megoldSzám = parseInt(részletek[0]);
     }
 }

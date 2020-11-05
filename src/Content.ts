@@ -1,7 +1,6 @@
 ﻿import fs from "fs";
 import http from "http";
 import url from "url";
-import Esemény from "./Események";
 import Megoldás from "./Megoldás";
 
 export default class Content {

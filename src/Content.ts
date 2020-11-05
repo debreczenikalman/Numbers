@@ -1,6 +1,7 @@
 ﻿import fs from "fs";
 import http from "http";
 import url from "url";
+import Esemény from "./Események";
 import Megoldás from "./Megoldás";
 
 export default class Content {
@@ -31,14 +32,33 @@ export default class Content {
         const feladat: Megoldás = new Megoldás("numberquest.txt");
 
         res.write("Második feladat: A fájlban " + feladat.ElsőFeladat().toString() + " kérdés van<br>");
-        // for (let i = 0; i < feladat.kérdések.length; i++) {
-        //     const e = feladat.kérdések[i];
-        //     res.write(e.kérdés + "<br>");
-        //     res.write(e.téma + " ");
-        //     res.write(e.pontszám.toString() + " ");
-        //     res.write(e.megoldSzám.toString() + "<br>");
-        // }
-        res.write("Harmadik feladat: " + feladat.MásodikFeladat());
+        res.write("Harmadik feladat: " + feladat.MásodikFeladat() + "<br>");
+        res.write("Negyedik feladat: A megoldások között a legkisebb szám a " + feladat.kérdésekMin.toString() + " és a legnagyobb a " + feladat.kérdésekMax.toString() + "<br>");
+        res.write("Ötödik feladat: A témák a következőek:<br>");
+        for (let i = 0; i < feladat.ÖtödikFeladat().length; i++) {
+            const e = feladat.ÖtödikFeladat()[i];
+            res.write(e + "<br>");
+        }
+
+        let téma = params.tema as string;
+        if (téma == undefined) {
+            téma = "Kérem a témát";
+        }
+        res.write(`Kérek egy témát: <input type='text' name='tema' value='${téma}' style='max-width:150px;' onChange='this.form.submit();'>\n`);
+
+        if (téma != undefined && téma != "Kérem a témát") {
+            const t = feladat.HatodikFeladat(téma);
+            res.write(t.kérdés + "<br>");
+            const tipp = parseInt(params.tipp as string);
+            res.write(`Kérek egy tippet: <input type='number' name='tipp' value='${tipp}' style='max-width:150px;' onChange='this.form.submit();'> A helyes válasz ${t.pontszám} pontot ér<br>`);
+            if (!isNaN(tipp)) {
+                if (tipp === t.megoldSzám) {
+                    res.write("Helyes válasz");
+                } else {
+                    res.write("Helyetlen válasz. A jó megoldás " + t.megoldSzám);
+                }
+            }
+        }
         // <---- Fejezd be a kódolást
         res.write("</pre></form>");
         res.write("</body></html>");

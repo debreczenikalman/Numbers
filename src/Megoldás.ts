@@ -1,7 +1,5 @@
 import fs from "fs";
 import Esemény from "./Események";
-import { randomInt } from "crypto";
-import { Session } from "inspector";
 
 export default class Megoldás {
     public kérdések: Array<Esemény>;
@@ -90,5 +88,40 @@ export default class Megoldás {
         const test1 = Math.round(Math.random() * indexex.length);
         const test = indexex[test1];
         return this.kérdések[test];
+    }
+    /**
+     * HetedikFeladat
+     */
+    public HetedikFeladat(): void {
+        const indexek = new Array<number>();
+        for (let i = 0; i < 10; i++) {
+            indexek.push(Math.round(Math.random() * this.kérdések.length));
+            let contains = false;
+            do {
+                for (let j = 0; j < indexek.length - 1; j++) {
+                    const e = indexek[j];
+                    if (e == indexek[indexek.length - 1]) {
+                        contains = true;
+                        break;
+                    }
+                    contains = false;
+                }
+                if (contains) {
+                    indexek[indexek.length - 1] = Math.round(Math.random() * this.kérdések.length);
+                }
+            } while (contains);
+        }
+        let sum = 0;
+        let totaal = "";
+        for (let i = 0; i < indexek.length; i++) {
+            const e = this.kérdések[indexek[i]];
+            totaal += "...\r\n";
+            totaal += e.pontszám.toString() + " " + e.megoldSzám.toString() + " " + e.kérdés.toString() + "\r\n";
+
+            sum += e.pontszám;
+        }
+        totaal += "...\r\n";
+        totaal += "Összesen " + sum.toString() + " pontot lehetet elérni a teszten" + "\r\n";
+        fs.writeFileSync("testquests.txt", totaal);
     }
 }

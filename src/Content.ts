@@ -58,6 +58,7 @@ export default class Content {
                 }
             }
         }
+        feladat.HetedikFeladat();
         // <---- Fejezd be a kódolást
         res.write("</pre></form>");
         res.write("</body></html>");
